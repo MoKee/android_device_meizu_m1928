@@ -1,0 +1,49 @@
+#FLYME_MMF_VIDEO Remove AAC AC3 AVI 3GP MKV MP3 OGG WAV FLAC APE MOV 63963135 ->46439132
+vendor.mm.enable.qcom_parser=46439132
+
+# Property to force the message to be sent on CDMA dedicated channel
+#jingyao.wt moidfy for chk26557 chk26558 20190603
+persist.vendor.radio.force_on_dc=true
+persist.vendor.ims.dropset_feature=1
+
+#bt mac address can repeat read/write
+persist.vendor.bluetooth.modem_nv_support=true
+
+#Telecom_BT,suheng fix#757065,disable wireless charge
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+
+#Req900966,wuyong.wt,add,20190523,set property for BT InBand Ring
+persist.bluetooth.disableinbandringing=false
+
+ #IOP properties
+vendor.iop.enable_uxe=0
+
+#Camera_Edit herongfeng@meizu.com modify
+ro.vendor.camera.no_vts=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.meizu.bspqa.camera,com.meizu.media.camera
+#Camera_Edit end
+
+#FLYME_MMF_VIDEO:hvx hwjpeg{@
+persist.hvx.hwjpeg.enable=true
+#@}
+
+#FLYME_MMF_AUDIO: AUDIO_ROTATION & Nmdplayer hifi support {@
+ro.audio.monitorRotation=true
+ro.hardware.hifi.support=true
+#@}
+
+# Add by huangjinwei@BSP: disable gatekeeper to use spu {@
+vendor.gatekeeper.disable_spu=true
+# @}
+
+#bug845205 add  psensor raw data interface  by linliwei
+persist.radio.psensor.rawdata=0
+#sensors-hal debug
+persist.vendor.debug.sensors.hal=i
+
+#added by chenhui.wt for chk29815
+persist.vendor.radio.ignore_dom_time=5
+
+#add by chenhui.wt for bug915893
+persist.vendor.radio.facnotsup_as_nonw=1
