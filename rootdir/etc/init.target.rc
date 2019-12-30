@@ -1,0 +1,2 @@
+on post-fs
+    mount none /system/etc/vendor_manifest.xml /vendor/etc/vintf/manifest.xml bind

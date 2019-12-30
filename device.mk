@@ -19,5 +19,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     mokee.biometrics.fingerprint.inscreen@1.0-service.m1928
 
+# Init
+PRODUCT_PACKAGES += \
+    init.target.rc
+
+# Manifest
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vendor_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vendor_manifest.xml
+
 # Inherit from sm8150-common
 $(call inherit-product, device/meizu/sm8150-common/common.mk)
