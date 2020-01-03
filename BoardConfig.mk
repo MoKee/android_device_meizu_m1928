@@ -18,9 +18,6 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 # HAX: Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
-
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
