@@ -24,5 +24,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Releasetools
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # inherit from the proprietary version
 -include vendor/meizu/m1928/BoardConfigVendor.mk
