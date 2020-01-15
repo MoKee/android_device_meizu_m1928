@@ -43,3 +43,7 @@ BUILD_FINGERPRINT := meizu/meizu_16T_CN/meizu16T:9/PKQ1.190616.001/1573644279:us
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=380
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    fod.dimming.min=40 \
+    fod.dimming.max=250
