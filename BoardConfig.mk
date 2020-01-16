@@ -30,6 +30,9 @@ SOONG_CONFIG_MEIZU_SM8150_FOD_INPUT := event3
 # Light
 SOONG_CONFIG_MEIZU_SM8150_LIGHT_MX_LED_PATH := /sys/class/leds/mx-led
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := /dev/mokee.touch@1.0/dt2w
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
