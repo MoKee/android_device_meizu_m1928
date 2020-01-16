@@ -26,5 +26,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vendor_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vendor_manifest.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service-qti.m1928
+
 # Inherit from sm8150-common
 $(call inherit-product, device/meizu/sm8150-common/common.mk)
